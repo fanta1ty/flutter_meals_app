@@ -8,13 +8,19 @@ class CategoriesScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Pick your category')),
       body: GridView(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           childAspectRatio: 3 / 2,
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
         ),
-        children: [],
+        children: const [
+          Text('1', style: TextStyle(color: Colors.white)),
+          Text('2', style: TextStyle(color: Colors.white)),
+          Text('3', style: TextStyle(color: Colors.white)),
+          Text('4', style: TextStyle(color: Colors.white)),
+          Text('5', style: TextStyle(color: Colors.white)),
+        ],
       ),
     );
   }
